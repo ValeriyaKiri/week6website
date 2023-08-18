@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;  
+    
+}
+
+.header_border {
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    left: 0;
+    top: 0;
+}
+.header-top {
+    display: flex;
+    min-height: 149px;
+    align-items:center;
+}
+
+
+._container {
+    max-width: 1351px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+.header-logo {
+    margin-left: 509px;
+padding-top: 33px;
+padding-bottom: 16px;
+}
+
+.logo {
+width: 307px;
+height: 100px;
+}
+
+.header-left{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 394px;
+}
+
+/*-----------------------------------------*/
+
+.header-nav{
+    max-width: 1351px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+.menu-list{
+    display: flex;
+    align-items:center;
+    list-style-type: none;
+    min-height: 67px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu-item:not(:last-child) {
+    margin: 0 52px 0 0;
+    
+}
+.menu-link {
+    text-decoration: none;
+    color: #575D65;
+font-family: Roboto Condensed;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+/*---------Шапка^----------------------------------*/
+
+
+
