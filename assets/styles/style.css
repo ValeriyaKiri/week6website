@@ -12,16 +12,11 @@
   z-index: 50;
 }
 
-.header_border {
-  width: 100%;
-  border: 1px solid #e5e5e5;
-  left: 0;
-  top: 0;
-}
 .header-top {
   display: flex;
-  min-height: 149px;
+  max-height: 149px;
   align-items: center;
+  justify-content: flex-end;
 }
 
 ._container {
@@ -32,19 +27,14 @@
 }
 
 .header-logo {
-  margin-left: 509px;
   padding-top: 33px;
   padding-bottom: 16px;
-}
-
-.logo {
-  width: 307px;
-  height: 100px;
 }
 
 .header-left {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0px 0px 0px 394px;
 }
@@ -52,14 +42,22 @@
 .left-menu {
   padding-left: 11px;
 }
+
+.header-line {
+  background: #e5e5e5;
+  width: 100%;
+  height: 1px;
+  margin-top: 16px;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 /*-----------------------------------------*/
 
-.nav-border {
-  width: 100%;
-  border: 1px solid #e5e5e5;
-  left: 0;
-  top: 0;
-}
 .header-nav {
   max-width: 1351px;
   margin: 0 auto;
@@ -69,6 +67,7 @@
 
 .menu-list {
   display: flex;
+  align-content: center;
   align-items: center;
   list-style-type: none;
   min-height: 67px;
@@ -76,13 +75,13 @@
   flex-wrap: wrap;
 }
 .menu-item:not(:last-child) {
-  margin: 0 52px 0 0;
+  padding: 0 52px 0 0;
 }
 .menu-link {
   text-decoration: none;
   color: #575d65;
   font-family: Roboto Condensed;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -112,10 +111,12 @@
 
 .right {
   background-image: url("../images/main-img1.jpg");
+  max-height: 640px;
 }
 
 .left {
   background-image: url("/assets/images/main-img2.jpg");
+  max-height: 640px;
 }
 
 .top-section {
@@ -129,17 +130,16 @@
 .top-text {
   color: #979797;
   font-family: Cormorant Garamond;
-  font-size: 100px;
+  font-size: 6vw;
   font-style: italic;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 32px;
 }
 
 .top_button {
   color: #baa598;
   font-family: Roboto Condensed;
-  font-size: 24px;
+  font-size: 1.5em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -149,6 +149,7 @@
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   padding: 20px 38px;
+  margin-top: 32px;
 }
 
 /*---------Top^----------------------------------*/
@@ -165,7 +166,7 @@
   color: #575d65;
   text-align: center;
   font-family: Roboto Condensed;
-  font-size: 24px;
+  font-size: 1.5em;
   font-style: normal;
   font-weight: 300;
   margin-top: 83px;
@@ -182,7 +183,7 @@ h2 {
   text-align: center;
   color: #363636;
   font-family: Cormorant Garamond;
-  font-size: 64px;
+  font-size: 4em;
   font-style: italic;
   font-weight: 300;
   line-height: normal;
@@ -195,8 +196,8 @@ h2 {
 }
 .products_items {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
-  column-gap: 77px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 77px;
   align-items: center;
   padding-top: 78px;
 }
@@ -204,9 +205,8 @@ h2 {
 .products_item {
   display: grid;
   grid-template-rows: 370px 54px;
-  row-gap: 15px;
+  gap: 15px;
   justify-items: center;
-  margin-left: 70px;
 }
 
 .products_image {
@@ -223,7 +223,7 @@ h2 {
 .products_button {
   color: #363636;
   font-family: Roboto Condensed;
-  font-size: 24px;
+  font-size: 1.5em;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -243,7 +243,7 @@ h2 {
     rgba(167, 147, 133, 0.15) 0%,
     rgba(167, 147, 133, 0) 100%
   );
-  height: 672px;
+  max-height: 672px;
   margin-top: 96px;
 }
 
@@ -251,18 +251,11 @@ h2 {
   padding-top: 50px;
 }
 
-.social-background {
-  position: relative;
-  padding-left: 32px;
-  padding-bottom: 95px;
-  width: 610px;
-  height: 476px;
-}
-
 .social_container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 1351px;
   margin: 0 auto;
   padding-top: 78px;
@@ -271,7 +264,7 @@ h2 {
 .social-link-text {
   color: #363636;
   font-family: Roboto Condensed;
-  font-size: 26px;
+  font-size: 1.625em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -291,7 +284,7 @@ h2 {
   text-decoration: none;
   color: #363636;
   font-family: Roboto Condensed;
-  font-size: 18px;
+  font-size: 1.125em;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -305,39 +298,43 @@ h2 {
 
 .social-gallery {
   display: grid;
-  width: 770px;
-  height: 380px;
-  grid-template-columns: repeat(4, 185px);
-  grid-template-rows: repeat(2, 185px);
+  max-width: 770px;
+  max-height: 380px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "big big small1 small2"
+    "big big small3 small4";
   gap: 10px;
-  padding-left: 112px;
+  padding: 20px;
 }
 
-.gallery-img {
-  position: relative;
-  padding: 0px 0px 85% 0px;
+.big {
+  grid-area: big;
 }
+.small1 {
+  grid-area: small1;
+}
+.small2 {
+  grid-area: small2;
+}
+.small3 {
+  grid-area: small3;
+}
+.small4 {
+  grid-area: small4;
+}
+
 .gallery-img img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
   object-fit: cover;
 }
 
-.gallery-img_big {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
 /*---------social^----------------------------------*/
-.partners {
-}
 
 .partners-item {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
   justify-items: center;
   padding-top: 73px;
@@ -351,7 +348,7 @@ h2 {
 
 .royal-mail {
   display: grid;
-  grid-template-columns: 876px 183px;
+  grid-template-columns: 5fr 1fr;
   gap: 41px;
   align-items: center;
 
@@ -361,19 +358,10 @@ h2 {
 .royal-mail-text {
   color: #363636;
   font-family: Roboto Condensed;
-  font-size: 28px;
+  font-size: 1.75em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
 }
 /*---------shipping^----------------------------------*/
-
-footer {
-  height: 453px;
-  background-image: url(/assets/images/footer.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  margin-top: 71px;
-}
