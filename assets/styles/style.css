@@ -115,8 +115,7 @@
 }
 
 .left {
-  background-image: url("/assets/images/main-img2.jpg");
-  max-height: 640px;
+	background-image: url('../images/main-img2.jpg');
 }
 
 .top-section {
